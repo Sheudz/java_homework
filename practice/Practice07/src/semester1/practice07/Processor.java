@@ -1,0 +1,23 @@
+package semester1.practice07;
+
+public class Processor
+{
+    private String model;
+    private double frequencyGHz;
+    private double price;
+
+    Processor(String model, double frequencyGHz, double price)
+    {
+        this.model = model;
+        this.frequencyGHz = frequencyGHz;
+        this.price = price;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public void printSpecs()
+    {
+        System.out.println("Процесор: " + model + " Частота: " + frequencyGHz + " GHz");
+    }
+}
