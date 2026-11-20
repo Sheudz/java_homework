@@ -38,7 +38,7 @@ class WeightedGradeSheet extends GradeSheet
         this.weights = new double[this.grades.length];
         for (int i = 0; i < this.weights.length; i++)
         {
-            this.weights[i] = (weights != null && weights.length == this.weights.length && Double.isFinite(weights[i]) && weights[i] >= 0) ? weights[i] : 1;
+            this.weights[i] = (weights != null && weights.length == this.weights.length && weights[i] >= 0) ? weights[i] : 1;
         }
     }
     @Override

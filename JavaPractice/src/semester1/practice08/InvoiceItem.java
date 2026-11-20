@@ -11,7 +11,7 @@ public class InvoiceItem
     {
         this.description = description;
         this.quantity = Math.max(0, quantity);
-        this.unitPrice = (Double.isFinite(unitPrice) && unitPrice >= 0) ? unitPrice : 0;
+        this.unitPrice = Math.max(0, unitPrice);
         this.discountPercent = (discountPercent >= 0 && discountPercent <= 50) ? discountPercent : 0;
     }
     public double getFinalAmount()

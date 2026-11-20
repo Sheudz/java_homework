@@ -12,7 +12,7 @@ public class CardWallet
     {
         this.cardNumber = (cardNumber != null && cardNumber.matches("[0-9]{16}")) ? cardNumber : "0000000000000000";
         this.pinCode = (pinCode != null && pinCode.matches("[0-9]{4}")) ? pinCode : "0000";
-        this.balance = (Double.isFinite(balance) && balance >= 0) ? balance : 0;
+        this.balance = Math.max(0, balance);
     }
     public boolean changePin(String oldPin, String newPin)
     {

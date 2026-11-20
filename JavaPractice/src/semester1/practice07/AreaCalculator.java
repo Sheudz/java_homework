@@ -23,7 +23,6 @@ public class AreaCalculator
         double p = (a + b + c) / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
-    // У ТЗ для трапеції та трикутника однакові сигнатури, тому тут інша назва.
     public double calculateTrapezoidArea(double base1, double base2, double height)
     {
         return (base1 + base2) / 2 * height;

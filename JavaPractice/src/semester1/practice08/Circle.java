@@ -14,7 +14,7 @@ public class Circle
     }
     public void setRadius(double radius)
     {
-        this.radius = (Double.isFinite(radius) && radius > 0) ? radius : 1.0;
+        this.radius = radius > 0 ? radius : 1.0;
     }
     public double getArea()
     {

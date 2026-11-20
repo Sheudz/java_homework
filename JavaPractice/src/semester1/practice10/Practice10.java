@@ -200,7 +200,6 @@ public class Practice10 {
         heating.setTargetTemperature(24);
         AbstractSmartAppliance[] appliances = {chandelier, heating};
         double totalWatts = 0;
-        System.out.println("Для прикладу: люстра 60 Вт при 100%, обігрів 1500 Вт");
         for (AbstractSmartAppliance appliance : appliances)
         {
             appliance.turnOn();
@@ -348,7 +347,6 @@ public class Practice10 {
 
         // TASK 27
         AbstractWorker[] staff = {new FullTimeDeveloper("Станіслав", 30000), new FopContractor("Андрій", 40000), new InternStudent("Іван", 10000)};
-        System.out.println("Для прикладу квартальні премії: штатний 30% окладу, ФОП 10%");
         auditStaff(staff);
 
         System.out.print("\n");
@@ -438,7 +436,6 @@ public class Practice10 {
         System.out.println("final не забороняє зміну елемента: " + Arrays.toString(numbers));
         System.out.println("Захисні копії: " + calibration);
         System.out.println("GRAVITY_G: " + FinalCalibrationTable.GRAVITY_G);
-        System.out.println("sensorSerial присвоюється тільки в конструкторі, повторне присвоєння не компілюється");
 
         System.out.print("\n");
 
@@ -447,7 +444,6 @@ public class Practice10 {
         System.out.println(protocols[0].runSecureCommand("jwt123", "status"));
         System.out.println(protocols[1].runSecureCommand("api123", "status"));
         System.out.println(protocols[0].runSecureCommand(null, "status"));
-        System.out.println("runSecureCommand не можна перевизначити, бо метод final");
 
         System.out.print("\n");
 
@@ -458,7 +454,6 @@ public class Practice10 {
             System.out.println(element + " Норма: " + element.getNorm());
         }
         System.out.println("Відстань: " + vectors[0].distanceTo(vectors[1]));
-        System.out.println("ImmutableVector3D final: успадкування заборонене, поліморфізм через інтерфейс працює");
 
         System.out.print("\n");
 
@@ -484,17 +479,8 @@ public class Practice10 {
 
         // TASK 39
         AbstractCombatUnit[] fighters = {new BerserkerAssasin(), new TrollWarlord(), new RoyalPaladin()};
-        System.out.println("Для прикладу критичний множник застосовується до кожної атаки власника здатності");
         runCombatRound(fighters);
 
-        System.out.print("\n");
-
-        // TASK 40
-        System.out.println("Для здачі потрібні коміт та push у власний GitHub-репозиторій");
-        System.out.println("git status");
-        System.out.println("git add src/semester1/practice10");
-        System.out.println("git commit -m \"Complete Practice 10 and Homework 10\"");
-        System.out.println("git push");
     }
 
     public static Shape2D findMaxAreaShape(Shape2D[] shapes)

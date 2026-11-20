@@ -8,7 +8,7 @@ public class PaymentCard
     public PaymentCard(String cardHolder, double balance)
     {
         this.cardHolder = cardHolder;
-        this.balance = (Double.isFinite(balance) && balance >= 0) ? balance : 0;
+        this.balance = Math.max(0, balance);
     }
     public double getBalance()
     {
@@ -16,7 +16,7 @@ public class PaymentCard
     }
     public boolean pay(double amount)
     {
-        if (Double.isFinite(amount) && amount > 0 && amount <= balance)
+        if (amount > 0 && amount <= balance)
         {
             balance -= amount;
             return true;
@@ -33,7 +33,6 @@ public class PaymentCard
 class DebitCard extends PaymentCard
 {
     private double dailyLimit;
-    private double spentToday;
 
     public DebitCard(String cardHolder, double balance, double dailyLimit)
     {
@@ -43,25 +42,16 @@ class DebitCard extends PaymentCard
     @Override
     public boolean pay(double amount)
     {
-        if (amount > dailyLimit - spentToday)
+        if (amount > dailyLimit)
         {
             return false;
         }
-        if (super.pay(amount))
-        {
-            spentToday += amount;
-            return true;
-        }
-        return false;
-    }
-    public void resetDailySpending()
-    {
-        spentToday = 0;
+        return super.pay(amount);
     }
     @Override
     public String toString()
     {
-        return "DebitCard{" + super.toString() + ", dailyLimit=" + dailyLimit + ", spentToday=" + spentToday + "}";
+        return "DebitCard{" + super.toString() + ", dailyLimit=" + dailyLimit + "}";
     }
 }
 

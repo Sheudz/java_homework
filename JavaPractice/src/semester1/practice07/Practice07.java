@@ -19,7 +19,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 3
+        // TASK 3
         BankAccount user1 = new BankAccount("N7381", "Анатолій", 50.0);
         user1.deposit(50.0);
         user1.withdraw(120.0);
@@ -27,19 +27,19 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 4
-        Point2D point1 = new Point2D(3, 4);      // (3.0; 4.0)
-        Point2D point2 = new Point2D(-2, 2);     // (-2.0; 2.0)
+        // TASK 4
+        Point2D point1 = new Point2D(3, 4);
+        Point2D point2 = new Point2D(-2, 2);
 
         point1.printPoint();
         point2.printPoint();
 
-        System.out.println("точка 1 -> 0.0: " + point1.distanceToOrigin());       // 5.0
-        System.out.println("точка 1 -> точка 2: " + point1.distanceTo(-2, 2));      // ~5.3852
+        System.out.println("точка 1 -> 0.0: " + point1.distanceToOrigin());
+        System.out.println("точка 1 -> точка 2: " + point1.distanceTo(-2, 2));
 
         System.out.print("\n");
 
-        //TASK 5
+        // TASK 5
         Product product = new Product("Навушники", 1000, 5, "Техніка");
         product.printProduct();
         System.out.println("Вартість партії: " + product.getTotalValue());
@@ -49,7 +49,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 6
+        // TASK 6
         Time time = new Time(23, 59, 59);
         System.out.println(time.toUniversalString());
         System.out.println(time.toStandardString());
@@ -60,7 +60,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 7
+        // TASK 7
         Rectangle rectangle = new Rectangle(3, 5);
         Rectangle square = new Rectangle(4);
         Rectangle unit = new Rectangle();
@@ -71,7 +71,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 8
+        // TASK 8
         Employee employee = new Employee(1, "Андрій Петренко", "Менеджер", 20000);
         employee.printBadge();
         employee.raiseSalary(15);
@@ -80,7 +80,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 9
+        // TASK 9
         new User("admin", "admin@mail.com", "ADMIN", false).printProfile();
         new User("andrii", "andrii@mail.com").printProfile();
         new User("oleksii").printProfile();
@@ -88,7 +88,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 10
+        // TASK 10
         Fraction fraction = new Fraction(6, -8);
         fraction.print();
         System.out.println(fraction.toDouble());
@@ -98,7 +98,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 11
+        // TASK 11
         Car car = new Car("Toyota", "Corolla", 2024);
         car.drive(150);
         car.startEngine();
@@ -107,7 +107,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 12
+        // TASK 12
         new SmartBulb(80, 3000, false).printStatus();
         new SmartBulb(75).printStatus();
         new SmartBulb().printStatus();
@@ -115,21 +115,21 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 13
+        // TASK 13
         String sql = new QueryBuilder("users").select("id, name, email").where("age >= 18").build();
         System.out.println(sql);
         System.out.println(new QueryBuilder("books").build());
 
         System.out.print("\n");
 
-        //TASK 14
+        // TASK 14
         new CoffeeOrder("Лате", "Large", 2, true).printReceipt();
         new CoffeeOrder("Капучино", "Small").printReceipt();
         new CoffeeOrder("Еспресо").printReceipt();
 
         System.out.print("\n");
 
-        //TASK 15
+        // TASK 15
         Box box = new Box(3, "Картон");
         Box copy = new Box(box);
         box.printBox();
@@ -139,14 +139,14 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 16
+        // TASK 16
         FlightTicket ticket = new FlightTicket("T123", "Андрій", "FL101", "Варшава", "Лондон");
         ticket.assignSeat("12A");
         ticket.printBoardingPass();
 
         System.out.print("\n");
 
-        //TASK 17
+        // TASK 17
         MathOperations math = new MathOperations();
         System.out.println(math.add(2, 3));
         System.out.println(math.add(2.5, 3.5));
@@ -158,7 +158,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 18
+        // TASK 18
         DocumentPrinter printer = new DocumentPrinter();
         printer.print("Привіт");
         printer.print(123);
@@ -168,7 +168,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 19
+        // TASK 19
         AreaCalculator area = new AreaCalculator();
         System.out.println("Квадрат: " + area.calculateArea(4));
         System.out.println("Коло: " + area.calculateArea(3, true));
@@ -178,7 +178,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 20
+        // TASK 20
         Logger logger = new Logger();
         logger.log("Програму запущено");
         logger.log("WARN", "Мало пам'яті");
@@ -187,7 +187,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 21
+        // TASK 21
         ArraySearcher searcher = new ArraySearcher();
         int[] numbers = {1, 5, 3, 5, 8};
         String[] words = {"Java", "Book", "Car"};
@@ -199,7 +199,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 22
+        // TASK 22
         DateService date = new DateService(15, 3, 2024);
         date.printDate();
         date.add(20);
@@ -211,7 +211,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 23
+        // TASK 23
         SalaryCalculator salary = new SalaryCalculator();
         System.out.println(salary.calculate(20000));
         System.out.println(salary.calculate(20000, 3000));
@@ -220,7 +220,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 24
+        // TASK 24
         ArrayFilter filter = new ArrayFilter();
         int[] arr = {12, 5, 8, 19, 24, 3, 16};
         System.out.println(java.util.Arrays.toString(filter.filter(arr, 10)));
@@ -230,7 +230,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 25
+        // TASK 25
         UserAccount account1 = new UserAccount("andrii", "a@mail.com");
         UserAccount account2 = new UserAccount("oleksii", "o@mail.com");
         UserAccount account3 = new UserAccount("ivan", "i@mail.com");
@@ -241,7 +241,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 26
+        // TASK 26
         for (int i = 1; i <= 6; i++)
         {
             System.out.println("Підключення " + i + ": " + ServerConfig.connect());
@@ -252,7 +252,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 27
+        // TASK 27
         System.out.println("5! = " + MathUtils.factorial(5));
         System.out.println("2^-3 = " + MathUtils.power(2, -3));
         System.out.println("НСД: " + MathUtils.gcd(24, 18));
@@ -260,7 +260,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 28
+        // TASK 28
         System.out.println("4150 грн в USD: " + CurrencyExchange.uahToUsd(4150));
         System.out.println("100 USD в грн: " + CurrencyExchange.usdToUah(100));
         System.out.println("100 EUR в грн: " + CurrencyExchange.eurToUah(100));
@@ -269,7 +269,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 29
+        // TASK 29
         FleetCar fleet1 = new FleetCar("VIN1", 1000);
         FleetCar fleet2 = new FleetCar("VIN2", 2000);
         FleetCar fleet3 = new FleetCar("VIN3", 3000);
@@ -280,7 +280,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 30
+        // TASK 30
         System.out.println(StringUtils.isPalindrome("А роза упала на лапу Азора"));
         System.out.println(StringUtils.reverse("Java"));
         System.out.println(StringUtils.countVowels("Привіт Java"));
@@ -288,7 +288,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 31
+        // TASK 31
         GameSession session1 = GameSession.createSession("Андрій");
         GameSession session2 = GameSession.createSession("Олексій");
         GameSession session3 = GameSession.createSession("Іван");
@@ -303,14 +303,14 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 32
+        // TASK 32
         System.out.println("Енергія 1 грама: " + PhysicsEngine.restEnergy(0.001));
         System.out.println("Падіння за 5 секунд: " + PhysicsEngine.freeFallDistance(5));
         System.out.println("Кінетична енергія: " + PhysicsEngine.kineticEnergy(2, 10));
 
         System.out.print("\n");
 
-        //TASK 33
+        // TASK 33
         LineSegment segment = new LineSegment(0, 0, 3, 4);
         segment.printSegment();
         System.out.println("Довжина: " + segment.getLength());
@@ -319,7 +319,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 34
+        // TASK 34
         ClientAccount ivan = new ClientAccount("UA001", "Іван", 10000);
         ClientAccount maria = new ClientAccount("UA002", "Марія", 2000);
         System.out.println("Переказ: " + ivan.transferTo(maria, 3500));
@@ -328,7 +328,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 35
+        // TASK 35
         Engine engine = new Engine("ENG123", 150);
         CarWithEngine carWithEngine = new CarWithEngine("Volkswagen", "Golf", engine);
         carWithEngine.printSpecs();
@@ -339,7 +339,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 36
+        // TASK 36
         Processor cpu = new Processor("Ryzen 5 5600", 3.5, 4500);
         Memory ram = new Memory(16, 3200, 1500);
         Computer computer = new Computer("Мій ПК", cpu, ram, 2000);
@@ -349,7 +349,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 37
+        // TASK 37
         Hero knight = new Hero("Лицар", 100, 25, 10);
         Hero orc = new Hero("Орк", 120, 22, 5);
         while (knight.isAlive() && orc.isAlive())
@@ -364,7 +364,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 38
+        // TASK 38
         Product mouse = new Product(1, "Мишка", 500);
         Product keyboard = new Product(2, "Клавіатура", 1000);
         Order order1 = new Order(new Customer("Андрій", 2000), 5);
@@ -378,7 +378,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 39
+        // TASK 39
         Vector3D vector1 = new Vector3D(1, 0, 0);
         Vector3D vector2 = new Vector3D(0, 1, 0);
         vector1.add(vector2).printVector();
@@ -390,7 +390,7 @@ public class Practice07 {
 
         System.out.print("\n");
 
-        //TASK 40
+        // TASK 40
         LibraryCatalog catalog = new LibraryCatalog(5);
         catalog.addBook(new BookItem("978-617-548-100-1", "Кобзар", "Тарас Шевченко"));
         catalog.addBook(new BookItem("978-617-548-100-2", "Лісова пісня", "Леся Українка"));

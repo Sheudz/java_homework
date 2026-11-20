@@ -376,13 +376,5 @@ public class Practice09 {
         System.out.println("Результат: " + Arrays.toString(processor.process(signal)));
         System.out.println("Початковий сигнал: " + Arrays.toString(signal));
 
-        System.out.print("\n");
-
-        // TASK 40
-        System.out.println("Для здачі виконайте коміт та push у власний GitHub-репозиторій");
-        System.out.println("git status");
-        System.out.println("git add src/semester1/practice09");
-        System.out.println("git commit -m \"Complete Practice 09 and Homework 09\"");
-        System.out.println("git push");
     }
 }

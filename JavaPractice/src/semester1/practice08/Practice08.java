@@ -98,7 +98,6 @@ public class Practice08 {
         CargoTruck truck = new CargoTruck("Volvo", 120, 400, 20);
         System.out.println(car);
         System.out.println(truck);
-        System.out.println("Для прикладу кожна тонна додає 5% до базової витрати");
         System.out.println("Витрата з повним вантажем: " + truck.getFullLoadConsumption(25) + " л/100 км");
 
         System.out.print("\n");
@@ -192,7 +191,6 @@ public class Practice08 {
         System.out.print("\n");
 
         // TASK 24
-        System.out.println("Для прикладу: кава 2 ккал/100 мл, молоко 50 ккал/100 мл, сироп 20 ккал за порцію");
         System.out.println(new Coffee("Середня обсмажка", 200, 40));
         System.out.println(new LatteWithAddons("Середня обсмажка", 200, 60, "Рослинне", 2));
 
@@ -223,14 +221,13 @@ public class Practice08 {
         // TASK 28
         CustomTerminal terminal = new CustomTerminal();
         System.out.println(terminal.authorize("stas"));
-        System.out.println("generateAuthHash не можна перевизначити, бо метод final");
+        // generateAuthHash не можна перевизначити, бо метод final
 
         System.out.print("\n");
 
         // TASK 29
         ImmutableServerCredentials credentials = new ImmutableServerCredentials("localhost", 8080, "my-api-key");
         System.out.println(credentials);
-        System.out.println("Клас final, тому від нього не можна створити спадкоємця");
 
         System.out.print("\n");
 
@@ -313,13 +310,5 @@ public class Practice08 {
         paladin.takeDamage(200);
         System.out.println(paladin);
 
-        System.out.print("\n");
-
-        // TASK 40
-        System.out.println("Для здачі роботи потрібні коміт та push у власний GitHub-репозиторій");
-        System.out.println("git status");
-        System.out.println("git add src/semester1/practice08 .gitignore");
-        System.out.println("git commit -m \"Complete Practice 08 and Homework 08\"");
-        System.out.println("git push");
     }
 }

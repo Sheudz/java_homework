@@ -26,7 +26,7 @@ public class Product
     }
     public void setPrice(double price)
     {
-        this.price = (Double.isFinite(price) && price >= 0) ? price : 0;
+        this.price = price >= 0 ? price : 0;
     }
     public void setStock(int stock)
     {

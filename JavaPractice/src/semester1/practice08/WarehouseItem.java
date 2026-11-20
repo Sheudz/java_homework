@@ -15,7 +15,7 @@ public class WarehouseItem
         this.priceHistory = (priceHistory == null) ? new double[0] : Arrays.copyOf(priceHistory, priceHistory.length);
         for (int i = 0; i < this.priceHistory.length; i++)
         {
-            if (!Double.isFinite(this.priceHistory[i]) || this.priceHistory[i] < 0)
+            if (this.priceHistory[i] < 0)
             {
                 this.priceHistory[i] = 0;
             }

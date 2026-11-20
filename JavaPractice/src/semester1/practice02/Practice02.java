@@ -5,7 +5,7 @@ public class Practice02 {
     {
         // TASK 1
         int age = 18;
-        double height = 1.78; // Зріст для прикладу, заміни на свій.
+        double height = 1.7;
         char firstLetter = 'С';
         boolean isStudent = true;
         System.out.println(age);
@@ -42,7 +42,6 @@ public class Practice02 {
         System.out.println(symbol1);
         System.out.println(symbol2);
         System.out.println(symbol3);
-        // У всіх трьох випадках це одна й та сама літера J.
 
         System.out.print("\n");
 
@@ -327,7 +326,6 @@ public class Practice02 {
         System.out.println("round: " + Math.round(negNum));
         System.out.println("ceil: " + Math.ceil(negNum));
         System.out.println("floor: " + Math.floor(negNum));
-        // Для від'ємного числа ceil дає -5.0, а floor дає -6.0
 
         System.out.print("\n");
 

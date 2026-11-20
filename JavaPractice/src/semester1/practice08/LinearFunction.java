@@ -28,7 +28,7 @@ class QuadraticFunction extends LinearFunction
     public QuadraticFunction(double a, double k, double b)
     {
         super(k, b);
-        this.a = (Double.isFinite(a) && a != 0) ? a : 1;
+        this.a = a != 0 ? a : 1;
     }
     @Override
     public double evaluate(double x)

@@ -22,7 +22,7 @@ public class CharacterUnit
     {
         if (rawDamage > 0)
         {
-            hp -= Math.min(hp, Math.max(1, rawDamage - armor));
+            hp = Math.max(0, hp - Math.max(1, rawDamage - armor));
         }
     }
     protected String buildHealthBar()
